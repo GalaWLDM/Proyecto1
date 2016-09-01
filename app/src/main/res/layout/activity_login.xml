@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".View.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="115dp"
+                android:layout_height="@dimen/size_image"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:src="@mipmap/ic_user2"
+                android:layout_weight="0.21" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editUsername"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:hint="@string/hint_username" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editPassword"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:inputType="textPassword"
+                android:hint="@string/hint_password" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_login"
+                android:background="@color/colorButtonLog"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:id="@+id/btnLogin"
+                android:onClick="login" />
+
+            <TextView
+                android:id="@+id/tvRegisterLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrarse aquí"
+                android:textStyle="bold"
+                android:textSize="@dimen/abc_text_size_headline_material" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
+

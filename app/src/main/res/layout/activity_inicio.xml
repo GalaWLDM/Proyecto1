@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.programacion.movil.estemanp.androidmvcapplication.View.Inicio"
+    android:background="@mipmap/fondo_ipad_retina_rollos_pelicula_bn">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:id="@+id/buttonIN"
+        android:background="@color/colorButtonLog"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:id="@+id/buttonUP"
+        android:background="@color/colorButtonRegis"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/buttonIN"
+        android:layout_alignLeft="@+id/buttonIN"
+        android:layout_alignStart="@+id/buttonIN" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Identificación"
+        android:id="@+id/textView"
+        android:layout_marginTop="38dp"
+        android:textStyle="bold|italic"
+        android:textIsSelectable="false"
+        android:textSize="@android:dimen/app_icon_size"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark" />
+
+</RelativeLayout>
